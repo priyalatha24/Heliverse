@@ -7,10 +7,16 @@ import  Section  from './components/Section';
 import Chrome from './components/Chrome';
 import Lastpg from './components/Lastpg';
 import Footer from './components/Footer';
+import { FluidSimulation } from './FluidSimulation';
+
 
 function App() {
    return (
-    <div>
+    <div className='container'>
+      {/* <canvas></canvas> */}
+      <FluidSimulation/>
+      
+      <div className='foreground'>
       <Navbar />
       <CenteredText />
       <Rating />
@@ -19,6 +25,8 @@ function App() {
       <Chrome/>
       <Lastpg/>
       <Footer/>
+      </div>
+      
     </div>
   );
 }

@@ -24,8 +24,48 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  overflow-x:hidden;
 }
 
+/* .foreground {
+  z-index: 1!important;
+  opacity: 100%;
+} */
 
+#bg-canvas{
+  /* z-index: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(6, 5, 5);
+  overflow: none; */
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 0;
+  
 
+}
 
+.foreground{
+  /* position: sticky;
+  pointer-events: none;
+  top: 0; */
+  top: -100vh;
+  flex: 1;
+  overflow-y: auto;
+  z-index: 1;
+  position: relative;
+  /* height: calc(100% - 100vh); */
+  pointer-events: none;
+
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  height: 100%;
+}

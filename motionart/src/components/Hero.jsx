@@ -2,6 +2,7 @@
 const CenteredText = () => {
   return (
     <div className="flex flex-wrap items-center justify-center pb-28">
+      
      <div  className="w-full lg:w-1/2 xl:w-1/3 text-center pb-5">
      <div className="lg:pb-60 lg:text-2xl">
           <h2 className="text-white w-full lg:w-1/2 xl:w-1/3 pl-20 "><span  className="  bg-gradient-to-r from-orange-500 to-violet-500 text-transparent bg-clip-text font-semibold">Transform Your Website</span><br />

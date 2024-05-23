@@ -15,7 +15,7 @@ const Section = () => {
                     <img src={section} alt="section" />
                 </div>
             </div>
-            <div className="xl:w-1/2 lg:w-1/2 w-full lg:pl-5 pt-7">
+            <div className="xl:w-1/2 lg:w-1/2 w-full lg:pl-5 pt-7 ">
                 <div className=" bg-[#080c23] border border-gray-700 bg-transparent bg-gray-800 rounded-3xl p-10">
                     <h1 className='font-bold'>Apply On Page</h1>
                     <p className='p-5'>Take your website to new heights with Motion Art for Elementor. Embrace the power of motion and animation.</p>

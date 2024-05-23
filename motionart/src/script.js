@@ -22,34 +22,34 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 */
 
-'use strict';
+// 'use strict';
 
 // Mobile promo section
 
-const promoPopup = document.getElementsByClassName('promo')[0];
-const promoPopupClose = document.getElementsByClassName('promo-close')[0];
+// const promoPopup = document.getElementsByClassName('promo')[0];
+// const promoPopupClose = document.getElementsByClassName('promo-close')[0];
 
-if (isMobile()) {
-    setTimeout(() => {
-        promoPopup.style.display = 'table';
-    }, 20000);
-}
+// if (isMobile()) {
+//     setTimeout(() => {
+//         promoPopup.style.display = 'table';
+//     }, 20000);
+// }
 
-promoPopupClose.addEventListener('click', e => {
-    promoPopup.style.display = 'none';
-});
+// promoPopupClose.addEventListener('click', e => {
+//     promoPopup.style.display = 'none';
+// });
 
-const appleLink = document.getElementById('apple_link');
-appleLink.addEventListener('click', e => {
-    ga('send', 'event', 'link promo', 'app');
-    window.open('https://apps.apple.com/us/app/fluid-simulation/id1443124993');
-});
+// const appleLink = document.getElementById('apple_link');
+// appleLink.addEventListener('click', e => {
+//     ga('send', 'event', 'link promo', 'app');
+//     window.open('https://apps.apple.com/us/app/fluid-simulation/id1443124993');
+// });
 
-const googleLink = document.getElementById('google_link');
-googleLink.addEventListener('click', e => {
-    ga('send', 'event', 'link promo', 'app');
-    window.open('https://play.google.com/store/apps/details?id=games.paveldogreat.fluidsimfree');
-});
+// const googleLink = document.getElementById('google_link');
+// googleLink.addEventListener('click', e => {
+//     ga('send', 'event', 'link promo', 'app');
+//     window.open('https://play.google.com/store/apps/details?id=games.paveldogreat.fluidsimfree');
+// });
 
 // Simulation section
 
@@ -1461,7 +1461,7 @@ function correctRadius (radius) {
     return radius;
 }
 
-canvas.addEventListener('mousedown', e => {
+canvas.addEventListener('mouseover', e => {
     let posX = scaleByPixelRatio(e.offsetX);
     let posY = scaleByPixelRatio(e.offsetY);
     let pointer = pointers.find(p => p.id == -1);
@@ -1478,9 +1478,9 @@ canvas.addEventListener('mousemove', e => {
     updatePointerMoveData(pointer, posX, posY);
 });
 
-window.addEventListener('mouseup', () => {
-    updatePointerUpData(pointers[0]);
-});
+// window.addEventListener('mouseup', () => {
+//     updatePointerUpData(pointers[0]);
+// });
 
 canvas.addEventListener('touchstart', e => {
     e.preventDefault();
